@@ -1,7 +1,6 @@
 from flask import Flask, redirect, url_for, render_template, request
-import math 
 app = Flask(__name__)
-
+import math 
 
 if __name__ == "main":
     app.run(debug=True)
@@ -80,9 +79,13 @@ def task2data():
         new_cases = request.form["new_cases"]
         vacc_rate = request.form["vacc_rate"]
         total_deaths = request.form["total_deaths"]
-        icu = 0.26303055 + 0.14382207* (float(new_cases)) + 0.01749679* (1 - float(vacc_rate)) + 0.04144739 * (- math.log(1 - float(vacc_rate))) + 0.13505927 *(math.log(float(total_deaths)))
-        icu = round(icu,1)
-        return render_template("task2.html", icu = icu)
+        icu = 0.26121492 + 0.08403397 * (float(new_cases)) + 0.03730511 * (1 - float(vacc_rate)) + 0.03361986 * (- math.log(1 - float(vacc_rate))) + 0.19590761* (math.log(float(total_deaths)))
+        icu = round(icu)
+        if icu >= 100:
+            warning = "Insufficient ICU's in Singapore!"
+        else:
+            warning = " "
+        return render_template("task2.html", icu = icu, warning=warning)
 
     else:
         return render_template("task2.html")
