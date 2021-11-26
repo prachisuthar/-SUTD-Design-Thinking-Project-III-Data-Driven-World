@@ -50,11 +50,11 @@
                         <div id="login" class="animate form">
                             <form  action="#" method="post" autocomplete="on"> 
                                 <h1>Task 2</h1> 
-                                <p>Number of Daily New Cases:</p>
+                                <p>Number of Daily New COVID-19 Cases in Singapore:</p>
                                 <p><input type="text" name="new_cases" placeholder="Please input numbers only"></p>
-                                <p>Vaccination Rate in Singapore:</p>
+                                <p>Proportion of Fully Vaccinated Indivduals in Singapore:</p>
                                 <p><input type="text" name="vacc_rate" placeholder="0 < vaccination rate < 1"></p>
-                                <p>Total Cummulative Deaths:</p>
+                                <p> Number of Cumulative COVID-19-related Deaths:</p>
                                 <p><input type="text" name="total_deaths" placeholder="Please input numbers only"></p>
                                 <p><input class="btn btn-primary" type="submit" value="Submit"></p>
                                 <!-- <p> 
@@ -72,7 +72,8 @@
                                 <p class="login button"> 
                                    <a href="http://cookingfoodsworld.blogspot.in/" target="_blank" ></a>
 								</p> -->
-                                <p>The ICU Usage rate in Singapore Hospitals is {{icu}} % !</p>
+                                <p>The ICU Usage Rate in Singapore Hospitals is {{icu}} % !</p>
+								<p class="warning">{{warning}}</p>
 
                             </form>
                         </div>
@@ -81,10 +82,12 @@
                 </div>  
             </section>
         </div>
-        <p>{{icu}}</p>
 
 
 <style>
+.warning{
+	color:red;
+}
     @font-face {
     font-family: 'Raleway', sans-serif;
 }
