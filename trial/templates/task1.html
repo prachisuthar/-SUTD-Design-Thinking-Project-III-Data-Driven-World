@@ -100,14 +100,15 @@ h3{
     <option value="Oceania">Oceania</option>
   </select>
 
-        <p>New cases:</p>
+        <p>Total Number of Daily COVID-19 Cases:</p>
         <p><input type="text" name="new_cases" placeholder="Please input numbers only"></p>
    
 
-        <p>Stringency Index:</p>
+        <p>Average Stringency Index:</p>
+		<a href="https://ourworldindata.org/grapher/covid-stringency-index"><p>Click here to see what is Stringency Index!</p></a>
         <p><input type="text" name="stringency_index" placeholder="1 < strigency index < 100"></p>
  
-        <p>Days:</p>
+        <p>Number of Days since 21st March 2020:</p>
         <p><input type="text" name="days" placeholder="Please input numbers only"></p>
         <p><input class="btn btn-primary" type="submit" value="Submit"></p>
                                 <!-- <p> 
@@ -125,7 +126,7 @@ h3{
                                 <p class="login button"> 
                                    <a href="http://cookingfoodsworld.blogspot.in/" target="_blank" ></a>
 								</p> -->
-                               <span> <h2>The new covid cases per day are {{ans}}!</h2></span>
+                               <span> <h2>There will be {{ans}} new COVID-19 cases per day in {{ans_continent}}!</h2></span>
                             </form>
                         </div>
 						
