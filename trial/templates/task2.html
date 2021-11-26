@@ -12,28 +12,6 @@
 <body>
     {% include 'navbar.html' %}
     
-    <!-- <div class="center">
-    <form action="#" method="post">
-    <p>Number of new cases:</p>
-    <p><input type="text" name="new_cases"></p>
-    <p>Vaccination Rate:</p>
-    <p><input type="text" name="vacc_rate" placeholder="0 < vaccination rate < 1"></p>
-    <p>Total Deaths:</p>
-    <p><input type="text" name="total_deaths"></p>
-    <p><input class="btn btn-primary" type="submit" value="Submit"></p>
-
-    </form>
-</div>
-
-    <p>{{icu}}</p>
-
-    <style>
-        .center {
-          margin: auto;
-          width: 20%;
-          padding: 100px;
-        }
-        </style> -->
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
         <div class="container">
            
@@ -57,21 +35,6 @@
                                 <p> Number of Cumulative COVID-19-related Deaths:</p>
                                 <p><input type="text" name="total_deaths" placeholder="Please input numbers only"></p>
                                 <p><input class="btn btn-primary" type="submit" value="Submit"></p>
-                                <!-- <p> 
-                                    <label for="username" class="uname" > Your email or username </label>
-                                    <input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
-                                </p>
-                                <p> 
-                                    <label for="password" class="youpasswd"> Your password </label>
-                                    <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" /> 
-                                </p>
-                                <p class="keeplogin"> 
-									<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
-									<label for="loginkeeping">Keep me logged in</label>
-								</p>
-                                <p class="login button"> 
-                                   <a href="http://cookingfoodsworld.blogspot.in/" target="_blank" ></a>
-								</p> -->
                                 <p>The ICU Usage Rate in Singapore Hospitals is {{icu}} % !</p>
 								<p class="warning">{{warning}}</p>
 
