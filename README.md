@@ -1,4 +1,4 @@
-# 2D-Final
+# SUTD Design Thinking Project III Data Driven World
 
 ## Instructions on running Flask app on Vocareum's terminal:
 
